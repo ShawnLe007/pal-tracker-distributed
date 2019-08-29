@@ -6,6 +6,8 @@ applications:
   memory: 1G
   instances: 1
   env:
+    MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "*"
+    MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS: always
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-allocations-database
