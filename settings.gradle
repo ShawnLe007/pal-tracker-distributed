@@ -22,3 +22,5 @@ include "databases:registration-database"
 include "databases:timesheets-database"
 
 include "integration-test"
+
+include "platform-services:oauth-server"
